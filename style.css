@@ -368,9 +368,14 @@ footer div section {
   display: flex;
   justify-content: right;
 }
-.contato article {
+.contato section div a {
+  text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
+}
+.contato section div a:hover {
+  color: #d65d4d;
+  transition: 500ms ease-in-out;
 }
 .social {
   gap: 20px;
