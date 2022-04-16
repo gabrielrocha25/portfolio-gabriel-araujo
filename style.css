@@ -126,15 +126,16 @@ table {
 /* Perfil */
 
 html {
+  margin: 0 10%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 body {
+  margin-top: 2%;
   border-radius: 10px;
   background-color: #ffffff;
-  padding: 0 0;
-  margin: 2% 10%;
 }
 
 header {
@@ -221,7 +222,7 @@ header nav {
   font-size: 1.7rem;
   text-align: left;
 }
-.exp div article strong {
+.exp div article b {
   font-weight: bold;
 }
 .exp div section {
@@ -368,17 +369,19 @@ footer div section {
   display: flex;
   justify-content: right;
 }
-.contato section div a {
+.contato div a {
+  display: flex;
+  justify-content: end;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
 }
-.contato section div a:hover {
+.contato div a:hover {
   color: #d65d4d;
   transition: 500ms ease-in-out;
 }
 .social {
-  gap: 20px;
+  gap: 30px;
   display: flex;
   justify-content: end;
 }
@@ -462,12 +465,21 @@ footer div section {
   }
 }
 @media (max-width: 750px) {
-  body {
-    margin: 0 0;
-  }
   .perfil {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .exp div section div button span,
+  .exp div section div button:hover span,
+  .exp div section div button:focus span {
+    display: none;
+  }
+  .exp div section div button:hover,
+  .exp div section div button:focus {
+    transition: 500ms ease-in-out !important;
+    background-color: #ff7765 !important;
+    padding: 0 0 !important
+    ;
   }
 }
 @media (max-width: 500px) {
