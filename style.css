@@ -452,7 +452,7 @@ footer div section {
   #contato,
   #contato .contato {
     gap: 20px;
-    padding: 50px;
+    padding: 50px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -484,6 +484,34 @@ footer div section {
 }
 @media (max-width: 500px) {
   header nav {
+    display: none;
+  }
+  .perfil {
+    margin: 0 0;
+  }
+  .exp {
+    margin: 0 0;
+  }
+  .exp div article {
+    max-width: 100vw;
+    font-size: 1.2rem;
+    line-break: always;
+    margin: 0 0;
+  }
+  .exp div section {
+    padding: 5px 5px;
+    gap: 20px;
+    margin: 5px 0px;
+  }
+  .exp div section h2 {
+    font-size: 1.2rem;
+  }
+  .exp div section article {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .perfil img {
     display: none;
   }
 }
