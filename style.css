@@ -403,6 +403,9 @@ footer div section {
 /* RESPONSIVO */
 
 @media (max-width: 1000px) {
+  html {
+    margin: 0px 2%;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -481,6 +484,9 @@ footer div section {
     padding: 0 0 !important
     ;
   }
+  .contato {
+    margin: 20px 20px;
+  }
 }
 @media (max-width: 500px) {
   header nav {
@@ -513,5 +519,8 @@ footer div section {
 @media (max-width: 350px) {
   .perfil img {
     display: none;
+  }
+  .contato {
+    margin: 0px 0px;
   }
 }
