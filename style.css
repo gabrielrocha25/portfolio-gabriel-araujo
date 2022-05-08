@@ -201,7 +201,15 @@ header nav {
 }
 
 /* Experiencia */
-
+.exp div section article a {
+  text-decoration: none;
+  color: #d65d4d;
+  transition: 200ms ease-in-out;
+}
+.exp div section article a:hover {
+  color: #ff7765;
+  transition: 200ms ease-in-out;
+}
 .exp {
   justify-items: center;
   padding: 50px 0px;
@@ -243,7 +251,7 @@ header nav {
   display: flex;
   justify-content: end;
 }
-.exp div section div button {
+.exp div section div a {
   justify-content: center;
   display: flex;
   margin: 0 0;
@@ -251,30 +259,32 @@ header nav {
   border-radius: 50px;
   border: none;
 }
-.exp div section div button svg {
+.exp div section div a svg {
   max-width: 45px;
   max-height: 45px;
 }
-.exp div section div button:hover,
-.exp div section div button:focus {
+.exp div section div a:hover,
+.exp div section div a:focus {
   transition: 500ms ease-in-out;
   background-color: #ff7765;
   padding-right: 140px;
 }
-.exp div section div button:hover svg,
-.exp div section div button:focus svg {
+.exp div section div a:hover svg,
+.exp div section div a:focus svg {
   fill: #f3f3f3;
   transition: 600ms ease-in-out;
 }
-.exp div section div button span {
+.exp div section div a span {
+  color: #181818;
+  text-decoration: none;
   position: absolute;
   margin-top: 13px;
   margin-left: 180px;
   opacity: 0;
   font-size: 1.2rem;
 }
-.exp div section div button:hover span,
-.exp div section div button:focus span {
+.exp div section div a:hover span,
+.exp div section div a:focus span {
   opacity: 1;
   transition: 1800ms ease-in-out;
 }
@@ -483,6 +493,37 @@ footer div section {
     background-color: #ff7765 !important;
     padding: 0 0 !important
     ;
+  }
+  .cursos,
+  .idiomas {
+    text-align: left;
+    padding: 0 0;
+  }
+  .cursos h2,
+  .cursos article,
+  .idiomas h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .cursos {
+    margin: 5px 5px;
+    padding: 20px 60px;
+    gap: 20px;
+    background-position-y: 17px;
+    background-position-x: 65px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-image: url(assets/icons/cursos-icon.svg);
+  }
+  .idiomas {
+    margin: 5px 5px;
+    padding: 20px 60px;
+    gap: 20px;
+    background-position-y: 17px;
+    background-position-x: 65px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-image: url(assets/icons/idiomas-icon.svg);
   }
   .contato {
     margin: 20px 20px;
