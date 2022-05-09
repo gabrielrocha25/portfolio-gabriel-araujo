@@ -240,8 +240,15 @@ header nav {
   text-align: left;
   background-color: #d7d7d7;
 }
-.exp div section h2 {
+.exp div section h2 a {
+  text-decoration: none;
+  color: #000;
   font-size: 1.7rem;
+  transition: 200ms ease-in-out;
+}
+.exp div section h2 a:hover {
+  color: #d65d4d;
+  transition: 200ms ease-in-out;
 }
 .exp div section article {
   font-size: 1.3rem;
@@ -550,7 +557,9 @@ footer div section {
     gap: 20px;
     margin: 5px 0px;
   }
-  .exp div section h2 {
+  .exp div section h2 a {
+    text-decoration: none;
+    color: #000;
     font-size: 1.2rem;
   }
   .exp div section article {
